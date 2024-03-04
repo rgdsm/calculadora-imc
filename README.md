@@ -43,8 +43,3 @@ Este projeto ainda está em desenvolvimento e algumas melhorias estão planejada
 
 Contribuições são bem-vindas! Se você deseja contribuir para este projeto, sinta-se à vontade para abrir uma issue ou enviar uma pull request.
 
-## Licença
-
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
-
----
