@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/2bc4beaad9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+    <main class="main"><!-- Main -->
+
+        <div class="main-area">
+            <div class="title-area">
+                <h1 id="title">Cálculo IMC</h1><!-- Title -->
+            <p class="p-area">
+                IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de
+                Saúde para calcular o peso ideal de cada pessoa.
+            </p>
+            <p class="p-area">
+                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao
+                quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+            </p>
+            <p class="p-area">
+                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da
+                tabela. Importante: siga os exemplos e use pontos como separadores.
+            </p>
+            </div>
+            
+            <div class="inputs"><!-- Inputs -->
+                <div class="input-names">
+                    <p class="height-input">
+                        Altura (ex.: 1.70)
+                        <input type="number" name="" class="input-text" placeholder="Metros" id="input-text-height">
+                    </p>
+
+                    <p class="weight-input">
+                        Peso (ex.: 69.2)
+                        <input type="number" name="" class="input-text" placeholder="Quilos" id="input-text-weight">
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="button-input">Calcular<i class="fa-solid fa-angle-right" id="icon-button"></i></button>
+                    <button type="button" id="reset-input">Limpar<i class="fa-solid fa-angle-right" id="icon-button"></i></button>
+                </div>
+
+            </div><!-- Inputs -->
+
+            <div class="tables"><!-- Tables -->
+                <h2 class="table-title">Veja a interpretação do IMC</h2>
+                <table class="table-tag">
+                        <tr class="tr-tag">
+                            <td class="td-tag title-table">IMC</td>
+                            <td class="td-tag title-table">Classificação</td>
+                            <td class="td-tag title-table">Obesidade (Grau)</td>
+                        </tr>
+
+                        <tr class="tr-tag">
+                            <td class="td-tag obs-0">Menor que 18,5</td>
+                            <td class="td-tag ">Magreza</td>
+                            <td class="td-tag">0</td>
+                        </tr>
+                        <tr class="tr-tag">
+                            <td class="td-tag obs-1">Entre 18,5 e 24,9</td>
+                            <td class="td-tag">Normal</td>
+                            <td class="td-tag">0</td>
+                        </tr>
+
+                        <tr class="tr-tag">
+                            <td class="td-tag obs-2">Entre 25,0 e 29,9</td>
+                            <td class="td-tag">Sobrepeso</td>
+                            <td class="td-tag">1</td>
+                        </tr>
+
+                        <tr class="tr-tag">
+                            <td class="td-tag obs-3">entre 30,0 e 39,9</td>
+                            <td class="td-tag">Obesidade</td>
+                            <td class="td-tag">2</td>
+                        </tr>
+
+                        <tr class="tr-tag">
+                            <td class="td-tag obs-4">maior que 40,0</td>
+                            <td class="td-tag">Obesidade grave</td>
+                            <td class="td-tag">3</td>
+                        </tr>
+                        </table>
+                   
+            </div><!-- Tables -->
+
+            <div class="result-imc"><!-- Result -->
+                <h2 id="result">Seu IMC:</h2>
+                <span id="resultIMC"></span>
+            </div><!-- Result -->
+
+        </div>
+
+    </main><!-- Main -->
+
+</body>
+
+</html>
